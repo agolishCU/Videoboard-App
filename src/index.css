@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-headline: "Barlow Condensed", sans-serif;
+    --font-body: "Chivo", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  body {
+    background-color: #10131a;
+    color: #e1e2ec;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom font utilities */
+.font-headline {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.font-body {
+  font-family: "Chivo", sans-serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Hide scrollbars for clean broadcast deck look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glow utility effects */
+.glow-volt {
+  box-shadow: 0 0 16px rgba(195, 244, 0, 0.45);
+}
+
+.glow-orange {
+  box-shadow: 0 0 16px rgba(255, 87, 8, 0.45);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 16px rgba(0, 218, 243, 0.45);
+}
+
+.text-glow-volt {
+  text-shadow: 0 0 12px rgba(195, 244, 0, 0.7);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 12px rgba(255, 87, 8, 0.7);
+}
+
+/* Scanline / LED pixel grid animation */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scanline {
+  animation: scanline 4s linear infinite;
+}

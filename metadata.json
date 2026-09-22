@@ -1,0 +1,6 @@
+{
+  "name": "ArenaPulse",
+  "description": "Broadcast-grade live arena videoboard & stadium display production console with instant hype pads, kinetic studio, and audio-reactive crowd meters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
